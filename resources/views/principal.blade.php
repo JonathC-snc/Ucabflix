@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="{{asset('../css/bootstrap.css')}}">
   <link rel="stylesheet" href="{{asset('../css/styles.css')}}">
+  <script src="{{ asset('../js/bootstrap.js') }}" defer></script>
   <title>Ucabflix</title>
 </head>
 <body>
   <header class="header">
-    <img src="../images/logo-netflix.png" height="30" alt="Logo Netflix">
+      <button type="button" class="btn btn-dark" >
+        <a class="nav-link" style="color: white" href="{{ route('bienvenida') }}">{{ __('Cerrar Session') }}</a>
+      </button>
     <nav>
       <ul class="navigation">
         <li class="navigation-item"><a href="#">Series</a></li>

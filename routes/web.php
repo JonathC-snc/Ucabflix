@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('principal', [App\Http\Controllers\principalController::class, 'index'])->name('principal');
+Route::get('bienvenida', [App\Http\Controllers\bienvenidaController::class, 'index'])->name('bienvenida');
